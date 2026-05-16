@@ -1,0 +1,91 @@
+.shell {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elev);
+  border-right: 1px solid var(--border);
+  padding: 18px 14px;
+  overflow-y: auto;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 6px 16px;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 14px;
+}
+.brand:hover {
+  text-decoration: none;
+}
+.brandTitle {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.brandSub {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+.navHeading {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  padding: 4px 6px 8px;
+}
+.navItem {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: var(--text-dim);
+  font-size: 13px;
+  text-decoration: none;
+  transition:
+    background 0.12s,
+    color 0.12s;
+}
+.navItem:hover {
+  background: var(--bg-elev-2);
+  color: var(--text);
+  text-decoration: none;
+}
+.navItem.active {
+  background: var(--bg-elev-2);
+  color: var(--accent);
+  border-left: 2px solid var(--accent-strong);
+  padding-left: 8px;
+}
+
+.footer {
+  margin-top: 18px;
+  padding: 10px;
+  font-size: 11px;
+  color: var(--text-dim);
+  background: var(--bg-elev-2);
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
